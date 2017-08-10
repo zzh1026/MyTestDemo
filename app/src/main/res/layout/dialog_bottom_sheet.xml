@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:padding="12dp"
+            android:text="设置备注及标签"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:padding="12dp"
+            android:text="标为星标朋友"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:padding="12dp"
+            android:text="设置朋友圈权限"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:padding="12dp"
+            android:text="发送该名片"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:padding="12dp"
+            android:text="投诉"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:padding="12dp"
+            android:text="加入黑名单"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:padding="12dp"
+            android:text="删除"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_svstatus_info"
+            android:drawablePadding="24dp"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text="添加到桌面"
+            android:textColor="#555555"
+            android:textSize="16sp" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

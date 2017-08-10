@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.demo.downrefresh.anddroid_5_0.wedgit.MyDragTextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#f00"
+        android:gravity="center"
+        android:text="控制器"
+        android:textColor="#fff" />
+
+    <TextView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#00f"
+        android:gravity="center"
+        android:text="child"
+        app:layout_behavior="com.demo.downrefresh.anddroid_5_0.behavior.MyBehavior1"
+        android:textColor="#fff" />
+
+</android.support.design.widget.CoordinatorLayout>
