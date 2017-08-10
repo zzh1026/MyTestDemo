@@ -1,7 +1,5 @@
 package com.demo.downrefresh.dagger;
 
-import javax.inject.Inject;
-
 /**
  * 这个类的作用是:
  * <p>
@@ -11,7 +9,7 @@ import javax.inject.Inject;
 public class Cloth {
     private String color;
 
-    @Inject
+//    @Inject
     public Cloth() {
     }
 

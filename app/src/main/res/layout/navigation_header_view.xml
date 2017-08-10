@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="150dp"
-    android:background="#000"
+    android:background="#00"
     android:gravity="center"
     android:orientation="vertical">
 
@@ -17,7 +17,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="随风飘扬的smile"
+        android:text="清风飘呀飘"
         android:textColor="@android:color/white"
         android:textSize="15sp" />
 </LinearLayout>
