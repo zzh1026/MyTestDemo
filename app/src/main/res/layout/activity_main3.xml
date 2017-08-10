@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f00"
+        android:gravity="center"
+        android:onClick="click"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="点击" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:alpha="0"
+            android:background="#f00"
+            android:gravity="center"
+            android:onClick="haha"
+            android:text="tv px" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="20dp"
+            android:background="#f00"
+            android:gravity="center"
+            android:onClick="haha"
+            android:text="从这里开始" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

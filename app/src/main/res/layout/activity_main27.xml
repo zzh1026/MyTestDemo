@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f3f3"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="send"
+        android:text="发送" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="false"
+        android:hint="请输入金额"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:maxLines="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:focusableInTouchMode="false"
+        android:maxLines="1"
+        android:text="我的手快点就算分开就打算考几分苦涩的减肥思考的减肥开始的减肥开机速度看房价快速的减肥可是对方思考的减肥开始的减肥开机速度分开就速度看房价快速的减肥思考的减肥开始的减肥开始的加快分解速度看福克斯的房价快速京东方斯蒂芬斯蒂芬斯蒂芬斯蒂芬" />
+
+    <com.dinuscxj.progressbar.CircleProgressBar
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:progress="40"
+        app:draw_progress_text="false"
+        app:progress_background_color="#6000"
+        app:progress_end_color="#000"
+        app:progress_start_color="#000"
+        app:progress_stroke_width="4dp"
+        app:style="solid_line" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        style="@style/Widget.MaterialRatingBar.RatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rating="2" />
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        style="@style/Widget.MaterialRatingBar.RatingBar.Indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:stepSize="1"
+        app:mrb_progressTint="@color/tint"
+        app:mrb_secondaryProgressTint="@color/tint" />
+
+    <com.hedgehog.ratingbar.RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        app:clickable="true"
+        app:halfstart="false"
+        app:starCount="5"
+        app:starEmpty="@drawable/my_trip_heart_normal"
+        app:starFill="@drawable/my_trip_heart_select"
+        app:starImageHeight="80dp"
+        app:starImagePadding="20dp"
+        app:starImageWidth="50dp"></com.hedgehog.ratingbar.RatingBar>
+
+    <me.zhanghai.android.materialratingbar.MaterialRatingBar
+        style="@android:style/Widget.Holo.RatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#fff"
+        android:stepSize="0.1"
+        app:mrb_progressTint="@color/tint" />
+
+    <RatingBar
+        style="@android:style/Widget.DeviceDefault.RatingBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#f00"
+        android:maxHeight="100dp"
+        android:minHeight="100dp"
+        android:numStars="5"
+        android:progressBackgroundTint="#fff"
+        android:progressTint="@color/tint"
+        android:stepSize="1" />
+
+</LinearLayout>

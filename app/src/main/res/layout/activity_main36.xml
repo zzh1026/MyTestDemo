@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f3f3"
+    android:orientation="vertical">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="click"
+        android:text="点击" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/vote_share_bg">
+
+        <TextView
+            android:id="@+id/dialog_vip_lucky_content"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="10元优惠券"
+            android:textColor="#f00"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <!--<com.demo.downrefresh.view.RubberView-->
+        <!--android:id="@+id/dialog_vip_lucky_scratch"-->
+        <!--android:layout_width="200dp"-->
+        <!--android:layout_height="60dp"-->
+        <!--/>-->
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="sldjflsdjf"
+        android:textColor="#f00"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/ctrl_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <VideoView
+                android:id="@+id/videoview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/player"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:gravity="center"
+            android:text="播放"
+            android:textColor="#f00" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

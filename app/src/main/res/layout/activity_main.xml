@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f00"
+            android:gravity="center"
+            android:text="屏幕一半" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0f0"
+            android:gravity="center"
+            android:text="屏幕一半" />
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00f" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="422dp"
+        android:layout_height="50dp"
+        android:background="#f00"
+        android:gravity="center"
+        android:text="422dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00f" />
+
+    <TextView
+        android:layout_width="540px"
+        android:layout_height="50dp"
+        android:background="#f00"
+        android:gravity="center"
+        android:text="tv px" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="#00f" />
+
+    <TextView
+        android:id="@+id/size2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0"
+        android:gravity="center"
+        android:text="理论长度:   实际长度" />
+
+
+</LinearLayout>

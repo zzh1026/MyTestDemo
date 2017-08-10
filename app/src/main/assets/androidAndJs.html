@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<!--  -->
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script type="text/javascript">
+            function javaCallJs(){
+                document.getElementById("content").innerHTML = "java刚刚调用了js的无参函数javaCallJs";
+            }
+            function javaCallJsWithArgs(args){
+                document.getElementById("content").innerHTML = "java调用了js的有参函数，传入的参数为：<br>" + args;
+            }
+        </script>
+</head>
+<body>
+html网页<br />
+<input type="text" value="js调用java的无参函数" onclick="window.android.jsCallJava()" />
+<input type="button" value="js调用java的有参函数，并向java中传递参数" onclick="window.android.jsCallJavaWithArgs('我是从js中来的参数')"/>
+<input type="button" value="点击打开app详情" onclick="market://details?id=com.neishenme.what"/>
+<div id="content"></div>
+</body>
+</html>

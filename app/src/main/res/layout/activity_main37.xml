@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f3f3"
+    android:orientation="vertical">
+
+    <com.demo.downrefresh.view.MyRelativeLayout
+        android:id="@+id/relativelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#8f00">
+
+        <com.demo.downrefresh.view.MyTextview
+            android:id="@+id/textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="#fff"
+            android:padding="20dp"
+            android:text="这是点击事件"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+    </com.demo.downrefresh.view.MyRelativeLayout>
+
+    <com.demo.downrefresh.view.RoundImageViewByZHY
+        android:id="@+id/imageview"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/default_image" />
+
+
+</LinearLayout>

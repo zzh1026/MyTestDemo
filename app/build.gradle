@@ -1,0 +1,131 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        applicationId "com.demo.downrefresh"
+        minSdkVersion 19
+        targetSdkVersion 23
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+//应用apt插件
+apply plugin: 'com.neenbedankt.android-apt'
+
+repositories {
+    mavenCentral()
+    mavenCentral() // jcenter() works as well because it pulls from Maven Central
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    //    compile 'com.nineoldandroids:library:2.4.0'
+    compile project(':animationlibrary')
+    compile 'com.bigkoo:pickerview:2.1.1'
+    compile 'cn.aigestudio.wheelpicker:WheelPicker:1.1.2'
+    //    compile 'com.koushikdutta.async:androidasync:2.+'
+    //    compile 'cn.yipianfengye.android:zxing-library:2.1'
+    compile 'com.yanzhenjie:permission:1.0.3'
+//    compile 'com.github.yoojia:next-qrcode:2.0-2'
+    compile 'com.android.support:cardview-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+
+    compile 'com.jakewharton:butterknife:8.4.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.4.0'
+    //    compile 'com.squareup.okhttp3:okhttp:3.6.0'
+    compile 'com.squareup.retrofit2:retrofit:2.0.2'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.1.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.5.0'
+    //    compile "io.reactivex.rxjava2:rxjava:2.x.y"
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    //    dagger
+    //引入dagger2
+//    compile 'com.google.dagger:dagger:2.4'
+//    apt 'com.google.dagger:dagger-compiler:2.4'
+    //java注解
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    //    glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'jp.wasabeef:glide-transformations:2.0.2'
+    // If you want to use the GPU Filters
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    //imagezoom
+    compile 'com.lzy.widget:view-core:0.2.2'
+    //recyclerview , 添加删除item 动画
+    compile 'jp.wasabeef:recyclerview-animators:2.2.5'
+    //自定义的评分library
+    compile 'me.zhanghai.android.materialratingbar:library:1.0.2'
+    //圆形的progressbar
+    compile 'com.dinuscxj:circleprogressbar:1.1.1'
+    compile 'com.hedgehog.ratingbar:app:1.1.2'
+    //自定义的倒计时
+    compile 'com.github.iwgang:countdownview:2.1.3'
+    //okhttp配置
+    compile 'com.lzy.net:okgo:2.1.4'
+    compile files('libs/tbs_sdk_thirdapp_v3.1.0.1034_43100_sharewithdownload_obfs_20170301_182143.jar')
+    compile 'com.zhy:okhttputils:2.6.2'
+
+    //logger
+    compile 'com.orhanobut:logger:1.15'
+
+    //二维码生成和扫描
+    compile 'com.google.zxing:core:3.2.1'
+    compile 'cn.bingoogolapple:bga-qrcodecore:1.1.7@aar'
+    compile 'cn.bingoogolapple:bga-zxing:1.1.7@aar'
+
+    //仿ios提示
+    compile 'com.bigkoo:svprogresshud:1.0.6'
+    compile 'com.kaopiz:kprogresshud:1.0.5'
+
+    //侧拉删除
+    compile 'com.github.mcxtzhang:SwipeDelMenuLayout:V1.2.5'
+
+    //自定义toast
+    compile 'com.github.GrenderG:Toasty:1.1.4'
+
+    //自定义dialog
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'com.github.Pierry:SimpleToast:v1.7'
+
+    //自定义的刷新数据框架
+    compile 'com.lcodecorex:tkrefreshlayout:1.0.7'
+
+    //android-Ultra-Pull-To-Refresh下拉刷新库
+    compile 'in.srain.cube:ultra-ptr:1.0.11'
+
+    //小型弹幕库
+    compile 'com.anbetter:danmukulight:1.0.0'
+
+    //状态栏的配置
+    compile 'com.jaeger.statusbaruitl:library:1.3.6'
+    compile ('com.github.niorgai:StatusBarCompat:2.1.3', {
+        exclude group: 'com.android.support'
+    })
+
+    //banner图的库
+    compile 'com.youth.banner:banner:1.4.9'  //最新版本
+
+    //eventbus事件订阅分发库
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    //photoview自定义控件 搜索picker 中的imagepicker , 1.4star
+//    compile 'com.github.chrisbanes:PhotoView:2.0.0'
+    compile 'com.lzy.widget:imagepicker:0.5.5'
+    compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    //搜crop 排名第一 的 ucrop , 5star ,不能用
+//    compile 'com.github.yalantis:ucrop:2.2.1'
+}

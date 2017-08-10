@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.aigestudio.wheelpicker.widgets.WheelDatePicker
+        android:id="@+id/hehe"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        android:background="#a000"
+        app:wheel_atmospheric="true"
+        app:wheel_curtain="true"
+        app:wheel_curved="true"
+        app:wheel_indicator="true"
+        app:wheel_indicator_color="#0f0"
+        app:wheel_indicator_size="1dp"
+        app:wheel_item_align="center"
+        app:wheel_item_text_color="#6fff"
+        app:wheel_item_text_size="30sp"
+        app:wheel_maximum_width_text="10000"
+        app:wheel_same_width="false"
+        app:wheel_selected_item_position="1"
+        app:wheel_selected_item_text_color="#f00" />
+
+    <!--<com.aigestudio.wheelpicker.widgets.WheelDatePicker-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="#fff"></com.aigestudio.wheelpicker.widgets.WheelDatePicker>-->
+
+</RelativeLayout>

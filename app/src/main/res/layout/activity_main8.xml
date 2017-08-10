@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_calendar"
+        android:text="申请日历权限" />
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_camera"
+        android:text="申请摄像机权限" />
+
+    <Button
+        android:id="@+id/btn_contacts"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_contacts"
+        android:text="申请联系人权限" />
+
+    <Button
+        android:id="@+id/btn_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_location"
+        android:text="申请位置权限" />
+
+    <Button
+        android:id="@+id/btn_microphone"
+        android:layout_width="match_parent"
+        android:onClick="btn_microphone"
+        android:layout_height="wrap_content"
+        android:text="申请麦克风权限" />
+
+    <Button
+        android:id="@+id/btn_storage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn_storage"
+        android:text="申请存储卡权限" />
+
+</LinearLayout>
